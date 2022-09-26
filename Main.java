@@ -16,6 +16,10 @@ public class Main {
         if (read1.isEmpty()) {
             number1 = 0.0;
         } else {
+            if (read1.contains(",")) {
+                System.out.println("That shouldn´t contain a ',' rather a '.'!");
+                System.exit(1);
+            }
             number1 = Double.parseDouble(read1);
         }
 
@@ -28,6 +32,10 @@ public class Main {
         if (read2.isEmpty()) {
             number2 = 0.0;
         } else {
+            if (read2.contains(",")) {
+                System.out.println("That shouldn´t contain a ',' rather a '.'!");
+                System.exit(1);
+            }
             number2 = Double.parseDouble(read2);
         }
 
