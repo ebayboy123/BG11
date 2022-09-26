@@ -20,6 +20,13 @@ public class Main {
                 System.out.println("That shouldn´t contain a ',' rather a '.'!");
                 System.exit(1);
             }
+
+            try {
+                Double.parseDouble(read1);
+            } catch (Exception e) {
+                System.out.println("Your first element is not a number");
+                System.exit(1);
+            }
             number1 = Double.parseDouble(read1);
         }
 
@@ -36,6 +43,12 @@ public class Main {
                 System.out.println("That shouldn´t contain a ',' rather a '.'!");
                 System.exit(1);
             }
+            try {
+                Double.parseDouble(read2);
+            } catch (Exception e) {
+                System.out.println("Your second element is not a number");
+                System.exit(1);
+            }
             number2 = Double.parseDouble(read2);
         }
 
@@ -48,6 +61,7 @@ public class Main {
         double substraktion = number1 - number2;
         float diff = (float) (number1 / (float) number2);
         double multiplication = number1 * number2;
+        double modulo = number1 % number2;
 
         System.out.println("------------------------------------------------------------");
         switch (modifier) {
@@ -68,11 +82,14 @@ public class Main {
                 break;
             }
 
+            case "%" -> {
+                System.out.println("Der Modulo von Zahl zwei in relation auf Zahl eins ist : " + modulo);
+            }
+
             default -> {
-                System.out.println("This isnt a correct operator, please use one of: '+'; '-'; '*'; '/'");
+                System.out.println("This isnt a correct operator, please use one of: '+'; '-'; '*'; '/'; '%'");
             }
         }
         System.out.println("------------------------------------------------------------");
-
     }
 }
