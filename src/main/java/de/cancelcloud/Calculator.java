@@ -2,7 +2,7 @@ package de.cancelcloud;
 
 import java.util.Scanner;
 
-public class Main {
+public class Calculator {
     public static void main(String[] args) {
         double number1;
         double number2;
