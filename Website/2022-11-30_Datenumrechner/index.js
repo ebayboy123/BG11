@@ -4,35 +4,35 @@ function convert() {
     let targetUnit = document.getElementById('targetUnit').value;
     let converted = 0;
 
-    // Convert to reqeusted unit
+    // Convert to requested unit
     //if sourceUnit == targetUnit
-    if (sourceUnit == targetUnit) {
+    if (sourceUnit === targetUnit) {
         document.getElementById('resultID').innerHTML = "Result: You`re an idiot!";
-        //return since theres no point in converting, since you`re an idiot
+        //return since there's no point in converting, since you`re an idiot
         return;
     }
 
 
     //Tebibity
-    if (sourceUnit == "tib" && targetUnit == "tb") {
+    if (sourceUnit === "tib" && targetUnit === "tb") {
         converted = input * 1024 / 1000;
     }
-    if (sourceUnit == "tb" && targetUnit == "tib") {
+    if (sourceUnit === "tb" && targetUnit === "tib") {
         converted = input * 1000 / 1024;
     }
-    if (sourceUnit == "tib" && targetUnit == "gb") {
+    if (sourceUnit === "tib" && targetUnit === "gb") {
         converted = (input * 1024 / 1000) * 1000;
     }
-    if (sourceUnit == "gb" && targetUnit == "tib") {
+    if (sourceUnit === "gb" && targetUnit === "tib") {
         converted = (input * 1000 / 1024) / 1000;
     }
-    if (sourceUnit == "tib" && targetUnit == "mb") {
+    if (sourceUnit === "tib" && targetUnit === "mb") {
         converted = (input * 1024 / 1000) / 1000 / 1000;
     }
-    if (sourceUnit == "tib" && targetUnit == "kb") {
+    if (sourceUnit === "tib" && targetUnit === "kb") {
         converted = (input * 1024 / 1000) / 1000 / 1000 / 1000;
     }
-    if (sourceUnit == "tib" && targetUnit == "b") {
+    if (sourceUnit === "tib" && targetUnit === "b") {
         converted = (input * 1024 / 1000) / 1000 / 1000 / 1000 / 1000;
     }
 
