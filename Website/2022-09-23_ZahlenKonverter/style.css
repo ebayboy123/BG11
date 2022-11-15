@@ -4,11 +4,11 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     background-color: #b9b6b6;
     box-sizing: border-box;
-    
+
 
 }
 
-.headding{
+.headding {
     font-family: 'Times New Roman', Times, sans-serif;
     font: 0px;
     font-weight: 300px;
@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 250px auto 5px auto;
-    
+
 
     box-sizing: border-box;
     border-color: brown;
@@ -43,8 +43,7 @@ body {
 .bintodec,
 .dectohex,
 .bintohex,
-.hextobin
-{
+.hextobin {
 
     /* background-color: #7dcd85; */
 
@@ -94,7 +93,6 @@ h2 {
 }
 
 
-
 p {
     color: white;
     font-size: 18px;
@@ -109,6 +107,7 @@ p {
     box-shadow: 4px 4px 10px black;
     color: black;
 }
+
 .link:hover {
     background-color: blue;
     color: #ffffff;

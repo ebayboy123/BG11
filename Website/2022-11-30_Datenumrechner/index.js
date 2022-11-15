@@ -1,4 +1,4 @@
-function convert(){
+function convert() {
     let input = document.getElementById('inputID').value;
     let sourceUnit = document.getElementById('sourceUnit').value;
     let targetUnit = document.getElementById('targetUnit').value;
@@ -11,32 +11,30 @@ function convert(){
         //return since theres no point in converting, since you`re an idiot
         return;
     }
-        
+
 
     //Tebibity
-    if(sourceUnit == "tib" && targetUnit == "tb") {
+    if (sourceUnit == "tib" && targetUnit == "tb") {
         converted = input * 1024 / 1000;
     }
-    if(sourceUnit == "tb" && targetUnit == "tib") {
-        converted = input * 1000 /1024;
+    if (sourceUnit == "tb" && targetUnit == "tib") {
+        converted = input * 1000 / 1024;
     }
-    if(sourceUnit == "tib" && targetUnit == "gb") {
+    if (sourceUnit == "tib" && targetUnit == "gb") {
         converted = (input * 1024 / 1000) * 1000;
     }
-    if(sourceUnit == "gb" && targetUnit == "tib") {
-        converted = (input *1000 / 1024) /1000;
+    if (sourceUnit == "gb" && targetUnit == "tib") {
+        converted = (input * 1000 / 1024) / 1000;
     }
-    if(sourceUnit == "tib" && targetUnit == "mb") {
-        converted = (input * 1024 / 1000) /1000 /1000;
+    if (sourceUnit == "tib" && targetUnit == "mb") {
+        converted = (input * 1024 / 1000) / 1000 / 1000;
     }
-    if(sourceUnit =="tib" && targetUnit == "kb") {
-        converted = (input *1024 /1000) /1000 /1000 /1000;
+    if (sourceUnit == "tib" && targetUnit == "kb") {
+        converted = (input * 1024 / 1000) / 1000 / 1000 / 1000;
     }
-    if(sourceUnit =="tib" && targetUnit == "b") {
-        converted = (input *1024 /1000) /1000 /1000 /1000 / 1000;
+    if (sourceUnit == "tib" && targetUnit == "b") {
+        converted = (input * 1024 / 1000) / 1000 / 1000 / 1000 / 1000;
     }
-
-
 
 
     // Give the result to the user
