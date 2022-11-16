@@ -11,37 +11,65 @@
 </head>
 
 <body>
-<div class="container bevelup" onclick="">
+<div class="container bevelup ">
+    <div class="inp"></div>
     <div class="title">
         Datenumrechner
     </div>
-    <div class="inputSection">
+    <div class="input-section">
         <label class="label">Wert:</label>
-        <input type="number" class="beveldown" value="68.9" id="inputID">
+        <input type="number" class="inp" value="5" id="inputID">
         <br>
         <label class="label">Von</label>
-        <select id="sourceUnit" class="bevelup">
-            <option value="tib" class="tebibyte">tib</option>
-            <option value="gib" class="gibibyte">gib</option>
-            <option value="mib" class="mebibyte">mib</option>
-            <option value="kib" class="kibibyte">kib</option>
-            <option value="b" class="byte">b</option>
+        <select id="sourceUnitID" class="inp">
+            <option value="Byte" class="Byte">Byte</option>
+            <option value="Bit" class="Bit">Bit</option>
+            <option value="KB" class="KB">KB</option>
+            <option value="KiB" class="KiB">KiB</option>
+            <option value="Kbit" class="Kbit">Kbit</option>
+            <option value="Kibit" class="Kibit">Kibit</option>
+            <option value="MB" class="MB">MB</option>
+            <option value="MiB" class="MiB">MiB</option>
+            <option value="Mbit" class="Mbit">Mbit</option>
+            <option value="Mibit" class="Mibit">Mibit</option>
+            <option value="GB" class="GB">GB</option>
+            <option value="GiB" class="GiB">GiB</option>
+            <option value="Gbit" class="Gbit">Gbit</option>
+            <option value="Gibit" class="Gibit">Gibit</option>
+            <option value="TB" class="TB">TB</option>
+            <option value="TiB" class="TiB">TiB</option>
+            <option value="Tbit" class="Tbit">Tbit</option>
+            <option value="Tibit" class="Tibit">Tibit</option>
         </select>
-
-
+        <br>
         <label class="label">Nach</label>
-        <select id="targetUnit" class="bevelup">
-            <option value="tb" class="terabyte">tb</option>
-            <option value="gb" class="gigabyte">gb</option>
-            <option value="mb" class="megabyte">mb</option>
-            <option value="kb" class="kilobyte">kb</option>
-            <option value="b" class="byte">b</option>
+        <select id="targetUnitID" class="inp">
+            <option value="Byte" class="Byte">Byte</option>
+            <option value="Bit" class="Bit">Bit</option>
+            <option value="KB" class="KB">KB</option>
+            <option value="KiB" class="KiB">KiB</option>
+            <option value="Kbit" class="Kbit">Kbit</option>
+            <option value="Kibit" class="Kibit">Kibit</option>
+            <option value="MB" class="MB">MB</option>
+            <option value="MiB" class="MiB">MiB</option>
+            <option value="Mbit" class="Mbit">Mbit</option>
+            <option value="Mibit" class="Mibit">Mibit</option>
+            <option value="GB" class="GB">GB</option>
+            <option value="GiB" class="GiB">GiB</option>
+            <option value="Gbit" class="Gbit">Gbit</option>
+            <option value="Gibit" class="Gibit">Gibit</option>
+            <option value="TB" class="TB">TB</option>
+            <option value="TiB" class="TiB">TiB</option>
+            <option value="Tbit" class="Tbit">Tbit</option>
+            <option value="Tibit" class="Tibit">Tibit</option>
         </select>
     </div>
-    <div class="outputSection">
-        <label class="label">Ergebnis:</label>
-        <button class="class bevelup" onclick="convert()">Konvertieren</button>
-        <div id="resultID" onclick="slide()">Noch nichts konvertiert!</div>
+    <button class="button">
+        <span class="button-content" onclick="convert()">konvertieren</span>
+    </button>
+    <div id="resultID">
+        Noch nichts konvertiert!
     </div>
+</div>
 </body>
 </html>
