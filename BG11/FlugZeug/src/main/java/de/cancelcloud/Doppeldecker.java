@@ -1,4 +1,3 @@
-package de.cancelcloud;
 
 public abstract class Doppeldecker extends Flugzeug {
     private int anzahlFluegel = 2;        // Anzahl Flügelpaare
@@ -37,13 +36,18 @@ public abstract class Doppeldecker extends Flugzeug {
         return offenesCockpit;
     }
 
-    abstract public boolean getLooping(double loopingSpeed) {
+    //abstract public boolean getLooping(double loopingSpeed) {
+        //abstract methoden haben keine Implementierung, nur einen Methodenkopf
+        //aber die Logik ist genau richtig
+    public boolean getLooping(double loopingSpeed) {
         if (this.loopingSpeed >= 320) {
             return true;
         } else {
             return false;
         }
     }
+    //Du hast dich schon um alles gekümmert, der Wert wird im Constructor einmal gesetzt, danach nicht mehr
+    //außerdem hat der Wert keinen Setter sondern nur einen Getter, genau so war es gedacht
     // I don't know how to do this, but I think it's something like this:
     /*
     private void offenesCockpit(boolean offenesCockpit) {

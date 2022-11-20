@@ -1,14 +1,17 @@
-package de.cancelcloud;
 
 public abstract class Verkehrsflugzeug extends Flugzeug {
     private int anzahlFluegel = 1;        // Anzahl Flügelpaare
     private int anzPassagiere;            // Anzahl Passagiere
 
     public Verkehrsflugzeug(String hersteller, int maxSpeed, int anzahlFluegel, int anzPassagiere) {
+        //wenn die Anzahl der Flügel immer 1 sein soll, brauchst du auch nicht den Parameter
+    //public Verkehrsflugzeug(String hersteller, int maxSpeed, int anzPassagiere) {
         this.hersteller = hersteller;
         this.maxSpeed = maxSpeed;
         this.anzahlFluegel = anzahlFluegel;
         this.anzPassagiere = anzPassagiere;
+        //oder super(hersteller, maxSpeed, 1);
+        //this.anzPassagiere = anzPassagiere;
     }
 
     public String getImmatNummer() {
@@ -27,7 +30,11 @@ public abstract class Verkehrsflugzeug extends Flugzeug {
         return anzPassagiere;
     }
 
-    abstract public boolean getLooping();
+    //abstract public boolean getLooping();
+    //nicht ganz richtig ....
+    public boolean getLooping() {
+        return false;
+    }
 
     // more methods
     private void setAnzPassagiere(int anzPassagiere) {
