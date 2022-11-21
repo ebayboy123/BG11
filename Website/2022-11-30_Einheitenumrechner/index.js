@@ -13,258 +13,258 @@ function convert() {
     }
 
 
-    function convert(){
+    function convert() {
         debugger;
-        let input=document.getElementById('inputID').value;
-        let sourceUnit=document.getElementById('sourceUnitID').value;
-        let targetUnit=document.getElementById('targetUnitID').value;
+        let input = document.getElementById('inputID').value;
+        let sourceUnit = document.getElementById('sourceUnitID').value;
+        let targetUnit = document.getElementById('targetUnitID').value;
         let converted;
 
         //m Umrechnung
-        if(sourceUnit === "m" && targetUnit === "km"){
+        if (sourceUnit === "m" && targetUnit === "km") {
             converted = input / 1000;
         }
-        if(sourceUnit === "km" && targetUnit === "m"){
+        if (sourceUnit === "km" && targetUnit === "m") {
             converted = input * 1000;
         }
-        if(sourceUnit === "m" && targetUnit === "dm"){
+        if (sourceUnit === "m" && targetUnit === "dm") {
             converted = input * 10;
         }
-        if(sourceUnit === "dm" && targetUnit === "m"){
+        if (sourceUnit === "dm" && targetUnit === "m") {
             converted = input / 10;
         }
-        if(sourceUnit === "m" && targetUnit === "cm"){
+        if (sourceUnit === "m" && targetUnit === "cm") {
             converted = input * 100;
         }
-        if(sourceUnit === "cm" && targetUnit === "m"){
+        if (sourceUnit === "cm" && targetUnit === "m") {
             converted = input / 100;
         }
-        if(sourceUnit === "m" && targetUnit === "mm"){
+        if (sourceUnit === "m" && targetUnit === "mm") {
             converted = input * 1000;
         }
-        if(sourceUnit === "mm" && targetUnit === "m"){
+        if (sourceUnit === "mm" && targetUnit === "m") {
             converted = input / 1000;
         }
-        if(sourceUnit === "m" && targetUnit === "µm"){
+        if (sourceUnit === "m" && targetUnit === "µm") {
             converted = input * 1e-6;
         }
-        if(sourceUnit === "µm" && targetUnit === "m"){
+        if (sourceUnit === "µm" && targetUnit === "m") {
             converted = input / 1e-6;
         }
-        if(sourceUnit === "m" && targetUnit === "nm"){
+        if (sourceUnit === "m" && targetUnit === "nm") {
             converted = input * 1e+9;
         }
-        if(sourceUnit === "nm" && targetUnit === "m"){
+        if (sourceUnit === "nm" && targetUnit === "m") {
             converted = input / 1e+9;
         }
-        if(sourceUnit === "m" && targetUnit === "pm"){
+        if (sourceUnit === "m" && targetUnit === "pm") {
             converted = input * 1e+12;
         }
-        if(sourceUnit === "pm" && targetUnit === "m"){
+        if (sourceUnit === "pm" && targetUnit === "m") {
             converted = input / 1e+12;
         }
-        if(sourceUnit === "m" && targetUnit === "fm"){
+        if (sourceUnit === "m" && targetUnit === "fm") {
             converted = input * 1e+15;
         }
-        if(sourceUnit === "fm" && targetUnit === "m"){
+        if (sourceUnit === "fm" && targetUnit === "m") {
             converted = input / 1e+15;
         }
 
 
         //km umrechnung
-        if(sourceUnit === "km" && targetUnit === "dm"){
+        if (sourceUnit === "km" && targetUnit === "dm") {
             converted = input * 10000;
         }
-        if(sourceUnit === "dm" && targetUnit === "km"){
+        if (sourceUnit === "dm" && targetUnit === "km") {
             converted = input / 10000;
         }
-        if(sourceUnit === "km" && targetUnit === "cm"){
+        if (sourceUnit === "km" && targetUnit === "cm") {
             converted = input * 100000;
         }
-        if(sourceUnit === "cm" && targetUnit === "km"){
+        if (sourceUnit === "cm" && targetUnit === "km") {
             converted = input / 100000;
         }
-        if(sourceUnit === "km" && targetUnit === "mm"){
+        if (sourceUnit === "km" && targetUnit === "mm") {
             converted = input * 1e+6;
         }
-        if(sourceUnit === "mm" && targetUnit === "km"){
+        if (sourceUnit === "mm" && targetUnit === "km") {
             converted = input / 1e+6;
         }
-        if(sourceUnit === "km" && targetUnit === "µm"){
+        if (sourceUnit === "km" && targetUnit === "µm") {
             converted = input * 1e+9;
         }
-        if(sourceUnit === "µm" && targetUnit === "km"){
+        if (sourceUnit === "µm" && targetUnit === "km") {
             converted = input / 1e+9;
         }
-        if(sourceUnit === "km" && targetUnit === "nm"){
+        if (sourceUnit === "km" && targetUnit === "nm") {
             converted = input * 1e+12;
         }
-        if(sourceUnit === "nm" && targetUnit === "km"){
+        if (sourceUnit === "nm" && targetUnit === "km") {
             converted = input / 1e+12;
         }
-        if(sourceUnit === "km" && targetUnit === "pm"){
+        if (sourceUnit === "km" && targetUnit === "pm") {
             converted = input * 1e+15;
         }
-        if(sourceUnit === "pm" && targetUnit === "km"){
+        if (sourceUnit === "pm" && targetUnit === "km") {
             converted = input / 1e+15;
         }
-        if(sourceUnit === "km" && targetUnit === "fm"){
+        if (sourceUnit === "km" && targetUnit === "fm") {
             converted = input * 1e+18;
         }
-        if(sourceUnit === "fm" && targetUnit === "km"){
+        if (sourceUnit === "fm" && targetUnit === "km") {
             converted = input / 1e+18;
         }
 
 
         //dm umrechnung
-        if(sourceUnit === "dm" && targetUnit === "cm"){
+        if (sourceUnit === "dm" && targetUnit === "cm") {
             converted = input * 10;
         }
-        if(sourceUnit === "cm" && targetUnit === "dm"){
+        if (sourceUnit === "cm" && targetUnit === "dm") {
             converted = input / 10;
         }
-        if(sourceUnit === "dm" && targetUnit === "mm"){
+        if (sourceUnit === "dm" && targetUnit === "mm") {
             converted = input * 100;
         }
-        if(sourceUnit === "mm" && targetUnit === "dm"){
+        if (sourceUnit === "mm" && targetUnit === "dm") {
             converted = input / 100;
         }
-        if(sourceUnit === "dm" && targetUnit === "µm"){
+        if (sourceUnit === "dm" && targetUnit === "µm") {
             converted = input * 100000;
         }
-        if(sourceUnit === "µm" && targetUnit === "dm"){
+        if (sourceUnit === "µm" && targetUnit === "dm") {
             converted = input / 100000;
         }
-        if(sourceUnit === "dm" && targetUnit === "nm"){
+        if (sourceUnit === "dm" && targetUnit === "nm") {
             converted = input * 1e+8;
         }
-        if(sourceUnit === "nm" && targetUnit === "dm"){
+        if (sourceUnit === "nm" && targetUnit === "dm") {
             converted = input / 1e+8;
         }
-        if(sourceUnit === "dm" && targetUnit === "pm"){
+        if (sourceUnit === "dm" && targetUnit === "pm") {
             converted = input * 1e+11;
         }
-        if(sourceUnit === "pm" && targetUnit === "dm"){
+        if (sourceUnit === "pm" && targetUnit === "dm") {
             converted = input / 1e+11;
         }
-        if(sourceUnit === "dm" && targetUnit === "fm"){
+        if (sourceUnit === "dm" && targetUnit === "fm") {
             converted = input * 1e+14;
         }
-        if(sourceUnit === "fm" && targetUnit === "dm"){
+        if (sourceUnit === "fm" && targetUnit === "dm") {
             converted = input / 1e+14;
         }
 
 
         //cm umrechnung
-        if(sourceUnit === "cm" && targetUnit === "mm"){
+        if (sourceUnit === "cm" && targetUnit === "mm") {
             converted = input * 10;
         }
-        if(sourceUnit === "mm" && targetUnit === "cm"){
+        if (sourceUnit === "mm" && targetUnit === "cm") {
             converted = input / 10;
         }
-        if(sourceUnit === "cm" && targetUnit === "µm"){
+        if (sourceUnit === "cm" && targetUnit === "µm") {
             converted = input * 10000;
         }
-        if(sourceUnit === "µm" && targetUnit === "cm"){
+        if (sourceUnit === "µm" && targetUnit === "cm") {
             converted = input / 10000;
         }
-        if(sourceUnit === "cm" && targetUnit === "nm"){
+        if (sourceUnit === "cm" && targetUnit === "nm") {
             converted = input * 1e+7;
         }
-        if(sourceUnit === "nm" && targetUnit === "cm"){
+        if (sourceUnit === "nm" && targetUnit === "cm") {
             converted = input / 1e+7;
         }
-        if(sourceUnit === "cm" && targetUnit === "pm"){
+        if (sourceUnit === "cm" && targetUnit === "pm") {
             converted = input * 1e+10;
         }
-        if(sourceUnit === "pm" && targetUnit === "cm"){
+        if (sourceUnit === "pm" && targetUnit === "cm") {
             converted = input / 1e+10;
         }
-        if(sourceUnit === "cm" && targetUnit === "fm"){
+        if (sourceUnit === "cm" && targetUnit === "fm") {
             converted = input * 1e+13;
         }
-        if(sourceUnit === "fm" && targetUnit === "cm"){
+        if (sourceUnit === "fm" && targetUnit === "cm") {
             converted = input / 1e+13;
         }
 
 
         //mm umrechnung
-        if(sourceUnit === "mm" && targetUnit === "µm"){
+        if (sourceUnit === "mm" && targetUnit === "µm") {
             converted = input * 1000;
         }
-        if(sourceUnit === "µm" && targetUnit === "mm"){
+        if (sourceUnit === "µm" && targetUnit === "mm") {
             converted = input / 1000;
         }
-        if(sourceUnit === "mm" && targetUnit === "nm"){
+        if (sourceUnit === "mm" && targetUnit === "nm") {
             converted = input * 1e+6;
         }
-        if(sourceUnit === "nm" && targetUnit === "mm"){
+        if (sourceUnit === "nm" && targetUnit === "mm") {
             converted = input / 1e+6;
         }
-        if(sourceUnit === "mm" && targetUnit === "pm"){
+        if (sourceUnit === "mm" && targetUnit === "pm") {
             converted = input * 1e+9;
         }
-        if(sourceUnit === "pm" && targetUnit === "mm"){
+        if (sourceUnit === "pm" && targetUnit === "mm") {
             converted = input / 1e+9;
         }
-        if(sourceUnit === "mm" && targetUnit === "fm"){
+        if (sourceUnit === "mm" && targetUnit === "fm") {
             converted = input * 1e+12;
         }
-        if(sourceUnit === "fm" && targetUnit === "mm"){
+        if (sourceUnit === "fm" && targetUnit === "mm") {
             converted = input / 1e+12;
         }
 
 
         //µm umrechnung
-        if(sourceUnit === "µm" && targetUnit === "nm"){
+        if (sourceUnit === "µm" && targetUnit === "nm") {
             converted = input * 1000;
         }
-        if(sourceUnit === "nm" && targetUnit === "µm"){
+        if (sourceUnit === "nm" && targetUnit === "µm") {
             converted = input / 1000;
         }
-        if(sourceUnit === "µm" && targetUnit === "pm"){
+        if (sourceUnit === "µm" && targetUnit === "pm") {
             converted = input * 1e+6;
         }
-        if(sourceUnit === "pm" && targetUnit === "µm"){
+        if (sourceUnit === "pm" && targetUnit === "µm") {
             converted = input / 1e+6;
         }
-        if(sourceUnit === "µm" && targetUnit === "fm"){
+        if (sourceUnit === "µm" && targetUnit === "fm") {
             converted = input * 1e+9;
         }
-        if(sourceUnit === "fm" && targetUnit === "µm"){
+        if (sourceUnit === "fm" && targetUnit === "µm") {
             converted = input / 1e+9;
         }
 
 
         //nm umrechnung
-        if(sourceUnit === "nm" && targetUnit === "pm"){
+        if (sourceUnit === "nm" && targetUnit === "pm") {
             converted = input * 1000;
         }
-        if(sourceUnit === "pm" && targetUnit === "nm"){
+        if (sourceUnit === "pm" && targetUnit === "nm") {
             converted = input / 1000;
         }
-        if(sourceUnit === "nm" && targetUnit === "fm"){
+        if (sourceUnit === "nm" && targetUnit === "fm") {
             converted = input * 1e+6;
         }
-        if(sourceUnit === "fm" && targetUnit === "nm"){
+        if (sourceUnit === "fm" && targetUnit === "nm") {
             converted = input / 1e+6;
         }
 
         //pm umrechnen
-        if(sourceUnit === "pm" && targetUnit === "fm"){
+        if (sourceUnit === "pm" && targetUnit === "fm") {
             converted = input * 1000;
         }
-        if(sourceUnit === "fm" && targetUnit === "pm"){
+        if (sourceUnit === "fm" && targetUnit === "pm") {
             converted = input / 1000;
         }
 
         //gleiches umrechnen
-        else if(sourceUnit === targetUnit){
-            converted= "Fehlerhafte Eingabe"
-            document.getElementById('resultID').innerHTML= "Ergebnis: " + converted;
+        else if (sourceUnit === targetUnit) {
+            converted = "Fehlerhafte Eingabe"
+            document.getElementById('resultID').innerHTML = "Ergebnis: " + converted;
             return;
         }
-        document.getElementById('resultID').innerHTML= "Ergebnis: " + converted+targetUnit;
+        document.getElementById('resultID').innerHTML = "Ergebnis: " + converted + targetUnit;
     }
 }
 

@@ -1,4 +1,3 @@
-
 public abstract class Doppeldecker extends Flugzeug {
     private int anzahlFluegel = 2;        // Anzahl Flügelpaare
 
@@ -13,6 +12,7 @@ public abstract class Doppeldecker extends Flugzeug {
         this.immatNummer = immatNummer;
         this.offenesCockpit = offenesCockpit;
     }
+
     public Doppeldecker(String hersteller, int maxSpeed, String immatNummer, boolean offenesCockpit) {
         this.hersteller = hersteller;
         this.maxSpeed = maxSpeed;
@@ -37,8 +37,8 @@ public abstract class Doppeldecker extends Flugzeug {
     }
 
     //abstract public boolean getLooping(double loopingSpeed) {
-        //abstract methoden haben keine Implementierung, nur einen Methodenkopf
-        //aber die Logik ist genau richtig
+    //abstract methoden haben keine Implementierung, nur einen Methodenkopf
+    //aber die Logik ist genau richtig
     public boolean getLooping(double loopingSpeed) {
         if (this.loopingSpeed >= 320) {
             return true;

@@ -1,4 +1,4 @@
-function convert(){
+function convert() {
     let input = document.getElementById('inputID').value;
     let sourceUnit = document.getElementById('sourceUnit').value;
     let targetUnit = document.getElementById('targetUnit').value;
@@ -11,57 +11,57 @@ function convert(){
         //return since theres no point in converting, since you`re an idiot
         return;
     }
-        
 
-    if(sourceUnit == "m" && targetUnit == "km"){
+
+    if (sourceUnit == "m" && targetUnit == "km") {
         converted = input / 1000;
     }
-    if(sourceUnit == "km" && targetUnit == "m"){
+    if (sourceUnit == "km" && targetUnit == "m") {
         converted = input * 1000;
     }
-    if(sourceUnit == "m" && targetUnit == "cm"){
+    if (sourceUnit == "m" && targetUnit == "cm") {
         converted = input * 100;
     }
-    if(sourceUnit == "cm" && targetUnit == "m"){
+    if (sourceUnit == "cm" && targetUnit == "m") {
         converted = input / 100;
     }
-    if(sourceUnit == "m" && targetUnit == "mm"){
+    if (sourceUnit == "m" && targetUnit == "mm") {
         converted = input * 1000;
     }
-    if(sourceUnit == "mm" && targetUnit == "m"){
+    if (sourceUnit == "mm" && targetUnit == "m") {
         converted = input / 1000;
     }
-    if(sourceUnit == "m" && targetUnit == "µm"){
+    if (sourceUnit == "m" && targetUnit == "µm") {
         converted = input * 1000000;
     }
-    if(sourceUnit == "µm" && targetUnit == "m"){
+    if (sourceUnit == "µm" && targetUnit == "m") {
         converted = input / 1000000;
     }
-    if(sourceUnit == "m" && targetUnit == "nm"){
+    if (sourceUnit == "m" && targetUnit == "nm") {
         converted = input * 1000000000;
     }
-    if(sourceUnit == "nm" && targetUnit == "m"){
+    if (sourceUnit == "nm" && targetUnit == "m") {
         converted = input / 1000000000;
     }
-    if(sourceUnit == "m" && targetUnit == "pm"){
+    if (sourceUnit == "m" && targetUnit == "pm") {
         converted = input * 1000000000000;
     }
-    if(sourceUnit == "pm" && targetUnit == "m"){
+    if (sourceUnit == "pm" && targetUnit == "m") {
         converted = input / 1000000000000;
     }
-    if(sourceUnit == "m" && targetUnit == "fm"){
+    if (sourceUnit == "m" && targetUnit == "fm") {
         converted = input * 1000000000000000;
     }
-    if(sourceUnit == "fm" && targetUnit == "m"){
+    if (sourceUnit == "fm" && targetUnit == "m") {
         converted = input / 1000000000000000;
     }
-    if(sourceUnit == "m" && targetUnit == "am"){
+    if (sourceUnit == "m" && targetUnit == "am") {
         converted = input * 1000000000000000000n;
     }
-    if(sourceUnit == "am" && targetUnit == "m"){
+    if (sourceUnit == "am" && targetUnit == "m") {
         converted = input / 1000000000000000000n;
     }
-    if(sourceUnit == "m" && targetUnit == "zm"){
+    if (sourceUnit == "m" && targetUnit == "zm") {
         converted = input * 1000000000000000000000n;
     }
 
