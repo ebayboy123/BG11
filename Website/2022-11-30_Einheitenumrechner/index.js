@@ -1,272 +1,222 @@
-function convert() {
-    let input = document.getElementById('inputID').value;
-    let sourceUnit = document.getElementById('sourceUnit').value;
-    let targetUnit = document.getElementById('targetUnit').value;
-    let converted = 0;
-
-    // Convert to reqeusted unit
-    //if sourceUnit === targetUnit
-    if (sourceUnit === targetUnit) {
-        document.getElementById('resultID').innerHTML = "Result: You`re an idiot!";
-        //return since theres no point in converting, since you`re an idiot
-        return;
-    }
-
 
     function convert() {
-        debugger;
         let input = document.getElementById('inputID').value;
-        let sourceUnit = document.getElementById('sourceUnitID').value;
-        let targetUnit = document.getElementById('targetUnitID').value;
-        let converted;
-
-        //m Umrechnung
-        if (sourceUnit === "m" && targetUnit === "km") {
-            converted = input / 1000;
-        }
-        if (sourceUnit === "km" && targetUnit === "m") {
-            converted = input * 1000;
-        }
-        if (sourceUnit === "m" && targetUnit === "dm") {
-            converted = input * 10;
-        }
-        if (sourceUnit === "dm" && targetUnit === "m") {
-            converted = input / 10;
-        }
-        if (sourceUnit === "m" && targetUnit === "cm") {
-            converted = input * 100;
-        }
-        if (sourceUnit === "cm" && targetUnit === "m") {
-            converted = input / 100;
-        }
-        if (sourceUnit === "m" && targetUnit === "mm") {
-            converted = input * 1000;
-        }
-        if (sourceUnit === "mm" && targetUnit === "m") {
-            converted = input / 1000;
-        }
-        if (sourceUnit === "m" && targetUnit === "µm") {
-            converted = input * 1e-6;
-        }
-        if (sourceUnit === "µm" && targetUnit === "m") {
-            converted = input / 1e-6;
-        }
-        if (sourceUnit === "m" && targetUnit === "nm") {
-            converted = input * 1e+9;
-        }
-        if (sourceUnit === "nm" && targetUnit === "m") {
-            converted = input / 1e+9;
-        }
-        if (sourceUnit === "m" && targetUnit === "pm") {
-            converted = input * 1e+12;
-        }
-        if (sourceUnit === "pm" && targetUnit === "m") {
-            converted = input / 1e+12;
-        }
-        if (sourceUnit === "m" && targetUnit === "fm") {
-            converted = input * 1e+15;
-        }
-        if (sourceUnit === "fm" && targetUnit === "m") {
-            converted = input / 1e+15;
-        }
+        let sourceUnit = document.getElementById('sourceUnit').value;
+        let targetUnit = document.getElementById('targetUnit').value;
 
 
-        //km umrechnung
-        if (sourceUnit === "km" && targetUnit === "dm") {
-            converted = input * 10000;
+        if (sourceUnit == "m" && targetUnit == "cm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 100
         }
-        if (sourceUnit === "dm" && targetUnit === "km") {
-            converted = input / 10000;
+        else if (sourceUnit == "m" && targetUnit == "mm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000
         }
-        if (sourceUnit === "km" && targetUnit === "cm") {
-            converted = input * 100000;
+        else if (sourceUnit == "m" && targetUnit == "km") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000
         }
-        if (sourceUnit === "cm" && targetUnit === "km") {
-            converted = input / 100000;
+        else if (sourceUnit == "m" && targetUnit == "pm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000000000000
         }
-        if (sourceUnit === "km" && targetUnit === "mm") {
-            converted = input * 1e+6;
+        else if (sourceUnit == "m" && targetUnit == "nm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000000000
         }
-        if (sourceUnit === "mm" && targetUnit === "km") {
-            converted = input / 1e+6;
+        else if (sourceUnit == "m" && targetUnit == "um") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000000
         }
-        if (sourceUnit === "km" && targetUnit === "µm") {
-            converted = input * 1e+9;
+        else if (sourceUnit == "m" && targetUnit == "dm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 10
         }
-        if (sourceUnit === "µm" && targetUnit === "km") {
-            converted = input / 1e+9;
+        else if (sourceUnit == "m" && targetUnit == "mi") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1609.344
         }
-        if (sourceUnit === "km" && targetUnit === "nm") {
-            converted = input * 1e+12;
+        else if (sourceUnit == "m" && targetUnit == "yd") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1.0936133
         }
-        if (sourceUnit === "nm" && targetUnit === "km") {
-            converted = input / 1e+12;
+        else if (sourceUnit == "m" && targetUnit == "ft") {
+            var converted = document.getElementById('resultID').innerHTML = input * 3.2808399
         }
-        if (sourceUnit === "km" && targetUnit === "pm") {
-            converted = input * 1e+15;
+        else if (sourceUnit == "m" && targetUnit == "in") {
+            var converted = document.getElementById('resultID').innerHTML = input * 39.3700787
         }
-        if (sourceUnit === "pm" && targetUnit === "km") {
-            converted = input / 1e+15;
+        else if (sourceUnit == "cm" && targetUnit == "m") {
+            var converted = document.getElementById('resultID').innerHTML = input / 100
         }
-        if (sourceUnit === "km" && targetUnit === "fm") {
-            converted = input * 1e+18;
+        else if (sourceUnit == "cm" && targetUnit == "mm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 10
         }
-        if (sourceUnit === "fm" && targetUnit === "km") {
-            converted = input / 1e+18;
+        else if (sourceUnit == "cm" && targetUnit == "km") {
+            var converted = document.getElementById('resultID').innerHTML = input / 100000
         }
-
-
-        //dm umrechnung
-        if (sourceUnit === "dm" && targetUnit === "cm") {
-            converted = input * 10;
+        else if (sourceUnit == "cm" && targetUnit == "pm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 10000000000
         }
-        if (sourceUnit === "cm" && targetUnit === "dm") {
-            converted = input / 10;
+        else if (sourceUnit == "cm" && targetUnit == "nm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 10000000
         }
-        if (sourceUnit === "dm" && targetUnit === "mm") {
-            converted = input * 100;
+        else if (sourceUnit == "cm" && targetUnit == "um") {
+            var converted = document.getElementById('resultID').innerHTML = input * 10000
         }
-        if (sourceUnit === "mm" && targetUnit === "dm") {
-            converted = input / 100;
+        else if (sourceUnit == "cm" && targetUnit == "dm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 10
         }
-        if (sourceUnit === "dm" && targetUnit === "µm") {
-            converted = input * 100000;
+        else if (sourceUnit == "cm" && targetUnit == "mi") {
+            var converted = document.getElementById('resultID').innerHTML = input / 160934.4
         }
-        if (sourceUnit === "µm" && targetUnit === "dm") {
-            converted = input / 100000;
+        else if (sourceUnit == "cm" && targetUnit == "yd") {
+            var converted = document.getElementById('resultID').innerHTML = input / 91.44
         }
-        if (sourceUnit === "dm" && targetUnit === "nm") {
-            converted = input * 1e+8;
+        else if (sourceUnit == "cm" && targetUnit == "ft") {
+            var converted = document.getElementById('resultID').innerHTML = input / 30.48
         }
-        if (sourceUnit === "nm" && targetUnit === "dm") {
-            converted = input / 1e+8;
+        else if (sourceUnit == "cm" && targetUnit == "in") {
+            var converted = document.getElementById('resultID').innerHTML = input / 2.54
         }
-        if (sourceUnit === "dm" && targetUnit === "pm") {
-            converted = input * 1e+11;
+        else if (sourceUnit == "mm" && targetUnit == "m") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000
         }
-        if (sourceUnit === "pm" && targetUnit === "dm") {
-            converted = input / 1e+11;
+        else if (sourceUnit == "mm" && targetUnit == "cm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 10
         }
-        if (sourceUnit === "dm" && targetUnit === "fm") {
-            converted = input * 1e+14;
+        else if (sourceUnit == "mm" && targetUnit == "km") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000000
         }
-        if (sourceUnit === "fm" && targetUnit === "dm") {
-            converted = input / 1e+14;
+        else if (sourceUnit == "mm" && targetUnit == "pm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000000000
         }
-
-
-        //cm umrechnung
-        if (sourceUnit === "cm" && targetUnit === "mm") {
-            converted = input * 10;
+        else if (sourceUnit == "mm" && targetUnit == "nm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000000
         }
-        if (sourceUnit === "mm" && targetUnit === "cm") {
-            converted = input / 10;
+        else if (sourceUnit == "mm" && targetUnit == "um") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000
         }
-        if (sourceUnit === "cm" && targetUnit === "µm") {
-            converted = input * 10000;
+        else if (sourceUnit == "mm" && targetUnit == "dm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 100
         }
-        if (sourceUnit === "µm" && targetUnit === "cm") {
-            converted = input / 10000;
+        else if (sourceUnit == "mm" && targetUnit == "mi") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1609000
         }
-        if (sourceUnit === "cm" && targetUnit === "nm") {
-            converted = input * 1e+7;
+        else if (sourceUnit == "mm" && targetUnit == "yd") {
+            var converted = document.getElementById('resultID').innerHTML = input / 914.4
         }
-        if (sourceUnit === "nm" && targetUnit === "cm") {
-            converted = input / 1e+7;
+        else if (sourceUnit == "mm" && targetUnit == "ft") {
+            var converted = document.getElementById('resultID').innerHTML = input / 304.8
         }
-        if (sourceUnit === "cm" && targetUnit === "pm") {
-            converted = input * 1e+10;
+        else if (sourceUnit == "mm" && targetUnit == "in") {
+            var converted = document.getElementById('resultID').innerHTML = input / 25.4
         }
-        if (sourceUnit === "pm" && targetUnit === "cm") {
-            converted = input / 1e+10;
+        else if (sourceUnit == "km" && targetUnit == "m") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000
         }
-        if (sourceUnit === "cm" && targetUnit === "fm") {
-            converted = input * 1e+13;
+        else if (sourceUnit == "km" && targetUnit == "cm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 100000
         }
-        if (sourceUnit === "fm" && targetUnit === "cm") {
-            converted = input / 1e+13;
+        else if (sourceUnit == "km" && targetUnit == "mm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000000
         }
-
-
-        //mm umrechnung
-        if (sourceUnit === "mm" && targetUnit === "µm") {
-            converted = input * 1000;
+        else if (sourceUnit == "km" && targetUnit == "pm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000000000000000
         }
-        if (sourceUnit === "µm" && targetUnit === "mm") {
-            converted = input / 1000;
+        else if (sourceUnit == "km" && targetUnit == "nm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000000000000
         }
-        if (sourceUnit === "mm" && targetUnit === "nm") {
-            converted = input * 1e+6;
+        else if (sourceUnit == "km" && targetUnit == "um") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000000000
         }
-        if (sourceUnit === "nm" && targetUnit === "mm") {
-            converted = input / 1e+6;
+        else if (sourceUnit == "km" && targetUnit == "dm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 100000
         }
-        if (sourceUnit === "mm" && targetUnit === "pm") {
-            converted = input * 1e+9;
+        else if (sourceUnit == "km" && targetUnit == "mi") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1.609344
         }
-        if (sourceUnit === "pm" && targetUnit === "mm") {
-            converted = input / 1e+9;
+        else if (sourceUnit == "km" && targetUnit == "yd") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1093.6133
         }
-        if (sourceUnit === "mm" && targetUnit === "fm") {
-            converted = input * 1e+12;
+        else if (sourceUnit == "km" && targetUnit == "ft") {
+            var converted = document.getElementById('resultID').innerHTML = input * 3280.8399
         }
-        if (sourceUnit === "fm" && targetUnit === "mm") {
-            converted = input / 1e+12;
+        else if (sourceUnit == "km" && targetUnit == "in") {
+            var converted = document.getElementById('resultID').innerHTML = input * 39370.0787
         }
-
-
-        //µm umrechnung
-        if (sourceUnit === "µm" && targetUnit === "nm") {
-            converted = input * 1000;
+        else if (sourceUnit == "pm" && targetUnit == "m") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000000000000
         }
-        if (sourceUnit === "nm" && targetUnit === "µm") {
-            converted = input / 1000;
+        else if (sourceUnit == "pm" && targetUnit == "cm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 10000000000
         }
-        if (sourceUnit === "µm" && targetUnit === "pm") {
-            converted = input * 1e+6;
+        else if (sourceUnit == "pm" && targetUnit == "mm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000000000
         }
-        if (sourceUnit === "pm" && targetUnit === "µm") {
-            converted = input / 1e+6;
+        else if (sourceUnit == "pm" && targetUnit == "km") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000000000000000
         }
-        if (sourceUnit === "µm" && targetUnit === "fm") {
-            converted = input * 1e+9;
+        else if (sourceUnit == "pm" && targetUnit == "nm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000000000
         }
-        if (sourceUnit === "fm" && targetUnit === "µm") {
-            converted = input / 1e+9;
+        else if (sourceUnit == "pm" && targetUnit == "um") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000000
         }
-
-
-        //nm umrechnung
-        if (sourceUnit === "nm" && targetUnit === "pm") {
-            converted = input * 1000;
+        else if (sourceUnit == "pm" && targetUnit == "dm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 100000000000
         }
-        if (sourceUnit === "pm" && targetUnit === "nm") {
-            converted = input / 1000;
+        else if (sourceUnit == "pm" && targetUnit == "mi") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1609000000000000
         }
-        if (sourceUnit === "nm" && targetUnit === "fm") {
-            converted = input * 1e+6;
+        else if (sourceUnit == "pm" && targetUnit == "yd") {
+            var converted = document.getElementById('resultID').innerHTML = input / 914400000000
         }
-        if (sourceUnit === "fm" && targetUnit === "nm") {
-            converted = input / 1e+6;
+        else if (sourceUnit == "pm" && targetUnit == "ft") {
+            var converted = document.getElementById('resultID').innerHTML = input / 304800000000
         }
-
-        //pm umrechnen
-        if (sourceUnit === "pm" && targetUnit === "fm") {
-            converted = input * 1000;
+        else if (sourceUnit == "pm" && targetUnit == "in") {
+            var converted = document.getElementById('resultID').innerHTML = input / 25400000000
         }
-        if (sourceUnit === "fm" && targetUnit === "pm") {
-            converted = input / 1000;
+        else if (sourceUnit == "nm" && targetUnit == "m") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000000000
+        }
+        else if (sourceUnit == "nm" && targetUnit == "cm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 10000000
+        }
+        else if (sourceUnit == "nm" && targetUnit == "mm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000000
+        }
+        else if (sourceUnit == "nm" && targetUnit == "km") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000000000000
+        }
+        else if (sourceUnit == "nm" && targetUnit == "pm") {
+            var converted = document.getElementById('resultID').innerHTML = input * 1000000000
+        }
+        else if (sourceUnit == "nm" && targetUnit == "um") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1000
+        }
+        else if (sourceUnit == "nm" && targetUnit == "dm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 100000000
+        }
+        else if (sourceUnit == "nm" && targetUnit == "mi") {
+            var converted = document.getElementById('resultID').innerHTML = input / 1609000000000
+        }
+        else if (sourceUnit == "nm" && targetUnit == "yd") {
+            var converted = document.getElementById('resultID').innerHTML = input / 914400000
+        }
+        else if (sourceUnit == "nm" && targetUnit == "ft") {
+            var converted = document.getElementById('resultID').innerHTML = input / 304800000
+        }
+        else if (sourceUnit == "nm" && targetUnit == "in") {
+            var converted = document.getElementById('resultID').innerHTML = input / 25400000
+        }   
+        else if (sourceUnit == "mm" && targetUnit == "cm") {
+            var converted = document.getElementById('resultID').innerHTML = input / 10
         }
 
         //gleiches umrechnen
         else if (sourceUnit === targetUnit) {
             converted = "Fehlerhafte Eingabe"
             document.getElementById('resultID').innerHTML = "Ergebnis: " + converted;
+            
             return;
         }
-        document.getElementById('resultID').innerHTML = "Ergebnis: " + converted + targetUnit;
+
     }
-}
+
 
 function slide() {
     window.open("https://discord.cooffeeSystems.cloud", "_blank");
