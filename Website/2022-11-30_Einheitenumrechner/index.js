@@ -212,7 +212,7 @@
             converted = "Fehlerhafte Eingabe"
             document.getElementById('resultID').innerHTML = "Ergebnis: " + converted;
             
-            return;
+
         }
 
     }
