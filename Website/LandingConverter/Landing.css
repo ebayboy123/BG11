@@ -50,7 +50,6 @@ body {
 
 }
 
-
 .canvas-title {
     transition: 1s all;
     color: aqua;
@@ -80,7 +79,6 @@ body {
     transition: 1s all;
     color: rgba(0, 0, 255, 0.5);
 }
-
 
 .card-text {
     color: beige;
